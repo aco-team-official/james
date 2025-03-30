@@ -3,79 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>James | Graphic Designer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>🔥 Dev Portfolio | Your Name</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">James</div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Your<span>Name</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hamburger">☰</button>
+        </div>
+    </nav>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm James</h1>
-            <p>Creative Graphic Designer</p>
-            <a href="#portfolio" class="cta-button">View My Work</a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Frontend Developer</h1>
+            <p>I build fast, modern websites that convert.</p>
+            <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
 
-    <section id="about">
+    <!-- Projects -->
+    <section id="projects" class="projects">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a graphic designer passionate about creating visually stunning designs that tell a story. I specialize in branding, UI/UX, and print design.</p>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <div class="portfolio-grid">
-                <!-- Portfolio items (images or mockups) -->
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/300" alt="Project 1">
-                    <div class="overlay">
-                        <h3>Project 1</h3>
-                    </div>
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="assets/project-1.jpg" alt="Project 1">
+                    <h3>E-Commerce Site</h3>
+                    <p>Built with React & Node.js</p>
+                    <a href="#" class="btn">Live Demo</a>
                 </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/300" alt="Project 2">
-                    <div class="overlay">
-                        <h3>Project 2</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/300" alt="Project 3">
-                    <div class="overlay">
-                        <h3>Project 3</h3>
-                    </div>
-                </div>
+                <!-- Add more project cards -->
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- Contact -->
+    <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Me</h2>
+            <h2>Get In Touch</h2>
             <form>
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>© 2025 James | Graphic Designer</p>
+        <div class="container">
+            <p>© 2024 YourName. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
